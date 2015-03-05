@@ -1,0 +1,22 @@
+@charset "windows-1250";
+/* - media-queries CSS Document */
+
+/* min-height */
+@media screen and (min-height: 540px) {}
+
+/* min-width */
+@media screen and (min-width: 540px) {}
+@media screen and (min-width: 800px) {
+	/*body {
+		font-size:1.5em;
+	}*/
+}
+
+/* max-width */
+@media screen and (max-width: 1000px) {}
+
+@media screen and (max-width: 800px) {}
+
+@media screen and (max-width: 640px) {}
+
+@media screen and (max-width: 480px) {}

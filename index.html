@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="windows-1250">
+
+<meta name="format-detection" content="telephone=yes" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+<!--FONTS-->
+<link href='http://fonts.googleapis.com/css?family=Raleway:300,600' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400&subset=cyrillic,latin,latin-ext' rel='stylesheet' type='text/css'>
+<!--SCRIPTS-->
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="scripts/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.swipebox.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+<!--CSS-->
+<link href="scripts/swipebox.css" type="text/css" rel="stylesheet">
+<link href="stilus-v2.css" type="text/css" rel="stylesheet">
+<link href="responsive-v2.css" type="text/css" rel="stylesheet">
+<!--TITLE-->
+<title>Korok és Borok - Tematikus Sétaút Egregyen</title>
+</head>
+<body>
+<header>
+    <div class="fixed-nav" id="nav-menu"><a href="#" id="menuClick"></a></div>
+    <div class="fixed-nav" id="nav-back"><a href="#?lastScreen"></a></div>
+</header>
+
+<div id="wrapper">
+    <!--cover page-->  
+    <div class="page current" id="cover">
+      <div align="center" id="loading" style="display: none"><img src="art/ajax-loader.gif" style="position: relative; top: 50px;"/><br><span id="progress"></span></div>
+      <div id="logo-cover"></div>
+      <div class="small-title" id="title-cover">
+        <h1><span>TEMATIKUS SÉTAÚT</span> HÉVÍZ EGREGY VÁROSRÉSZÉBEN</h1>
+      </div>
+      <div id="kotelezo"><img src="art/kotelezo.png" width="540" alt="szechenyi 2020"/></div>
+    </div>
+    <!--//cover page-->
+    <!--connection page-->
+    <div class="page" id="connectionError">
+      <div id="logo-cover"></div>
+      <div class="small-title" id="title-cover">
+        <h1><span>NINCS INTERNETKAPCSOLAT</span></h1>
+        </br></br>
+      </div>
+    </div>
+    <!--//connection page-->
+    <div id="appContent"></div>
+</div>
+<footer><img src="art/sticky-footer-green.png" width="540" height="269" alt=""/></footer>
+</body>
+</html>
